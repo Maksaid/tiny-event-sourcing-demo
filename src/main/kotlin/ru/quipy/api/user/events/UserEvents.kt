@@ -1,6 +1,6 @@
-package ru.quipy.aggregate.user.events
+package ru.quipy.api.user.events
 
-import ru.quipy.aggregate.user.UserAggregate
+import ru.quipy.api.user.UserAggregate
 import ru.quipy.core.annotations.DomainEvent
 import ru.quipy.domain.Event
 import java.util.UUID

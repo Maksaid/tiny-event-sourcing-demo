@@ -1,9 +1,9 @@
 package ru.quipy.logic.project
 
-import ru.quipy.aggregate.project.events.TaskAddedEvent
-import ru.quipy.aggregate.project.events.TaskAddedExecutorEvent
-import ru.quipy.aggregate.project.events.TaskNameUpdatedEvent
-import ru.quipy.aggregate.project.events.TaskStatusChangedEvent
+import ru.quipy.api.project.events.TaskAddedEvent
+import ru.quipy.api.project.events.TaskAddedExecutorEvent
+import ru.quipy.api.project.events.TaskNameUpdatedEvent
+import ru.quipy.api.project.events.TaskStatusChangedEvent
 import ru.quipy.logic.UserAccessConstraintChecker.Companion.canAccess
 import java.util.*
 

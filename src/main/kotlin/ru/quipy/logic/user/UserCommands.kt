@@ -1,7 +1,7 @@
 package ru.quipy.logic.user
 
-import ru.quipy.aggregate.user.events.UserChangedNameEvent
-import ru.quipy.aggregate.user.events.UserCreatedEvent
+import ru.quipy.api.user.events.UserChangedNameEvent
+import ru.quipy.api.user.events.UserCreatedEvent
 import java.util.*
 
 fun UserAggregateState.createUser(userName: String): UserCreatedEvent {

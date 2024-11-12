@@ -4,9 +4,9 @@ import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
-import ru.quipy.aggregate.user.UserAggregate
-import ru.quipy.aggregate.user.events.UserChangedNameEvent
-import ru.quipy.aggregate.user.events.UserCreatedEvent
+import ru.quipy.api.user.UserAggregate
+import ru.quipy.api.user.events.UserChangedNameEvent
+import ru.quipy.api.user.events.UserCreatedEvent
 import ru.quipy.streams.AggregateSubscriptionsManager
 import javax.annotation.PostConstruct
 

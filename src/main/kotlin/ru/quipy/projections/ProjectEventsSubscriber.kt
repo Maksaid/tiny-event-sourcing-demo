@@ -4,8 +4,8 @@ import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
-import ru.quipy.aggregate.project.ProjectAggregate
-import ru.quipy.aggregate.project.events.*
+import ru.quipy.api.project.ProjectAggregate
+import ru.quipy.api.project.events.*
 import ru.quipy.streams.AggregateSubscriptionsManager
 import javax.annotation.PostConstruct
 

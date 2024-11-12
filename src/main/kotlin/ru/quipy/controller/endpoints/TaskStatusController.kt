@@ -1,9 +1,9 @@
 package ru.quipy.controller.endpoints
 
 import org.springframework.web.bind.annotation.*
-import ru.quipy.aggregate.project.ProjectAggregate
-import ru.quipy.aggregate.project.events.TaskStatusCreatedEvent
-import ru.quipy.aggregate.project.events.TaskStatusDeletedEvent
+import ru.quipy.api.project.ProjectAggregate
+import ru.quipy.api.project.events.TaskStatusCreatedEvent
+import ru.quipy.api.project.events.TaskStatusDeletedEvent
 import ru.quipy.core.EventSourcingService
 import ru.quipy.logic.project.ProjectAggregateState
 import ru.quipy.logic.project.createTaskStatus

@@ -1,11 +1,11 @@
 package ru.quipy.controller.endpoints
 
 import org.springframework.web.bind.annotation.*
-import ru.quipy.aggregate.project.ProjectAggregate
-import ru.quipy.aggregate.project.events.TaskAddedEvent
-import ru.quipy.aggregate.project.events.TaskAddedExecutorEvent
-import ru.quipy.aggregate.project.events.TaskNameUpdatedEvent
-import ru.quipy.aggregate.project.events.TaskStatusChangedEvent
+import ru.quipy.api.project.ProjectAggregate
+import ru.quipy.api.project.events.TaskAddedEvent
+import ru.quipy.api.project.events.TaskAddedExecutorEvent
+import ru.quipy.api.project.events.TaskNameUpdatedEvent
+import ru.quipy.api.project.events.TaskStatusChangedEvent
 import ru.quipy.core.EventSourcingService
 import ru.quipy.logic.project.*
 import java.util.*
