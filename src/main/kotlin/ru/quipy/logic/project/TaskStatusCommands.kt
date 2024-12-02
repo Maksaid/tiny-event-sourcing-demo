@@ -1,7 +1,7 @@
 package ru.quipy.logic.project
 
-import ru.quipy.api.project.events.TaskStatusCreatedEvent
-import ru.quipy.api.project.events.TaskStatusDeletedEvent
+import ru.quipy.aggregate.project.events.TaskStatusCreatedEvent
+import ru.quipy.aggregate.project.events.TaskStatusDeletedEvent
 import ru.quipy.logic.UserAccessConstraintChecker.Companion.canAccess
 import java.util.*
 

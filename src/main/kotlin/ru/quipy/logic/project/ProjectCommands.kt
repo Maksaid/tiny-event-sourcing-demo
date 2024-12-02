@@ -1,8 +1,8 @@
 package ru.quipy.logic.project
 
-import ru.quipy.api.project.events.ProjectAddedMemberEvent
-import ru.quipy.api.project.events.ProjectCreatedEvent
-import ru.quipy.api.project.events.ProjectRenamedEvent
+import ru.quipy.aggregate.project.events.ProjectAddedMemberEvent
+import ru.quipy.aggregate.project.events.ProjectCreatedEvent
+import ru.quipy.aggregate.project.events.ProjectRenamedEvent
 import ru.quipy.logic.UserAccessConstraintChecker.Companion.canAccess
 import java.util.*
 

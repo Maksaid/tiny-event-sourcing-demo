@@ -1,8 +1,8 @@
 package ru.quipy.logic.user
 
-import ru.quipy.api.user.UserAggregate
-import ru.quipy.api.user.events.UserChangedNameEvent
-import ru.quipy.api.user.events.UserCreatedEvent
+import ru.quipy.aggregate.user.UserAggregate
+import ru.quipy.aggregate.user.events.UserChangedNameEvent
+import ru.quipy.aggregate.user.events.UserCreatedEvent
 import ru.quipy.core.annotations.StateTransitionFunc
 import ru.quipy.domain.AggregateState
 import java.util.*

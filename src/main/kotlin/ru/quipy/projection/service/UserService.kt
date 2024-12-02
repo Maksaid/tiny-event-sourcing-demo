@@ -3,8 +3,8 @@ package ru.quipy.projection.service
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
-import ru.quipy.api.user.UserAggregate
-import ru.quipy.api.user.events.UserCreatedEvent
+import ru.quipy.aggregate.user.UserAggregate
+import ru.quipy.aggregate.user.events.UserCreatedEvent
 import ru.quipy.projection.dto.UserDto
 import ru.quipy.projection.repository.UserProjectionRepository
 import ru.quipy.projection.view.UserView
@@ -23,8 +23,7 @@ class UserService(
     @SubscribeEvent
     fun userCreatedSubscriber(event: UserCreatedEvent) {
         logger.info("User created: {}", event.userName)
-        userProjectionRepository.save(
-            UserView.User(
+        userProjectionRepository.save(UserView.User(
             event.userId,
             event.userName,
             event.createdAt

@@ -1,9 +1,9 @@
 package ru.quipy.controller.endpoints
 
 import org.springframework.web.bind.annotation.*
-import ru.quipy.api.user.UserAggregate
-import ru.quipy.api.user.events.UserChangedNameEvent
-import ru.quipy.api.user.events.UserCreatedEvent
+import ru.quipy.aggregate.user.UserAggregate
+import ru.quipy.aggregate.user.events.UserChangedNameEvent
+import ru.quipy.aggregate.user.events.UserCreatedEvent
 import ru.quipy.core.EventSourcingService
 import ru.quipy.logic.user.UserAggregateState
 import ru.quipy.logic.user.changeUserName

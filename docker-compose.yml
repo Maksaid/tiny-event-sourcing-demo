@@ -1,21 +1,9 @@
 version: "3.9"
 services:
-  postgres:
-    hostname: event_sourcing_db
-    image: postgres:14.9-alpine
-    env_file:
-      - ./.env
-    environment:
-      POSTGRES_DB: tiny_es
-      POSTGRES_USER: tiny_es
-      POSTGRES_PASSWORD: tiny_es
-    ports:
-      - 5444:5444
-    restart: unless-stopped
   mongo:
     build:
       context: mongoDb
-#      dockerfile: mongoDb/Dockerfile
+      dockerfile: Dockerfile
     restart: always
     ports:
       - 27017:27017

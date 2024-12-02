@@ -1,10 +1,10 @@
 package ru.quipy.controller.endpoints
 
 import org.springframework.web.bind.annotation.*
-import ru.quipy.api.project.ProjectAggregate
-import ru.quipy.api.project.events.ProjectAddedMemberEvent
-import ru.quipy.api.project.events.ProjectCreatedEvent
-import ru.quipy.api.project.events.ProjectRenamedEvent
+import ru.quipy.aggregate.project.ProjectAggregate
+import ru.quipy.aggregate.project.events.ProjectAddedMemberEvent
+import ru.quipy.aggregate.project.events.ProjectCreatedEvent
+import ru.quipy.aggregate.project.events.ProjectRenamedEvent
 import ru.quipy.core.EventSourcingService
 import ru.quipy.logic.project.ProjectAggregateState
 import ru.quipy.logic.project.addMember
@@ -38,10 +38,5 @@ class ProjectController(
         return projectEsService.update(projectId){
             it.addMember(userId, callerId)
         }
-    }
-
-    @GetMapping("/{projectId}")
-    fun getProject(@PathVariable projectId: UUID) : ProjectAggregateState? {
-        return projectEsService.getState(projectId)
     }
 }

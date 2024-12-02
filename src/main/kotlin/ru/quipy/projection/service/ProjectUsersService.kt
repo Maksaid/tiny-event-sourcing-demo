@@ -3,9 +3,9 @@ package ru.quipy.projection.service
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
-import ru.quipy.api.project.ProjectAggregate
-import ru.quipy.api.project.events.ProjectAddedMemberEvent
-import ru.quipy.api.project.events.ProjectCreatedEvent
+import ru.quipy.aggregate.project.ProjectAggregate
+import ru.quipy.aggregate.project.events.ProjectAddedMemberEvent
+import ru.quipy.aggregate.project.events.ProjectCreatedEvent
 import ru.quipy.projection.dto.UserDto
 import ru.quipy.projection.repository.ProjectUsersProjectionRepository
 import ru.quipy.projection.repository.UserProjectionRepository

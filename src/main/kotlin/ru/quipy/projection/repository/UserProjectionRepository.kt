@@ -1,7 +1,7 @@
 package ru.quipy.projection.repository
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository
 import ru.quipy.projection.view.UserView
 import java.util.*
 
-interface UserProjectionRepository : JpaRepository<UserView.User, UUID>
+interface UserProjectionRepository : MongoRepository<UserView.User, UUID>
